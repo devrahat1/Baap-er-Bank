@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Inside</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1 class="font-semibold text-4xl text-center mt-6 ">Leets Get Some Money </h1>
+  </header>
+  <main>
+    <section class="mt-12">
+      <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto  ">
+        <div class="bg-green-500 text-center rounded-md p-6">
+          <h4 class="text-3xl">Deposit</h4>
+          <h2 class="text-2xl">$<span id="deposit-total"> 00 </span></h2>
+        </div>
+        <div class="bg-yellow-500 text-center rounded-md p-6">
+          <h4 class="text-3xl">Widraw</h4>
+          <h2 class="text-2xl">$<span id="widraw-total"> 00 </span></h2>
+        </div>
+        <div class="bg-orange-500 text-center rounded-md p-6">
+          <h4 class="text-3xl">Balance</h4>
+          <h2 class="text-2xl">$<span id="balance-total">1240</span></h2>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- deposit and witdraw -->
+
+
+    <section class="mt-12">
+      <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto  ">
+        <div class="bg-fuchsia-500	rounded-md p-6">
+          <h4 class="text-3xl">Please Deposit</h4>
+          <input class="block w-9/12 px-3 mt-3 rounded-md " type="text" name="" id="deposit-field"
+            placeholder="$ amount you want to deposit">
+          <button id="btn-Deposit"
+            class="mt-2 bg-orange-500  hover:bg-blue-700 mt-3 rounded-md px-3 py-1 font-medium ">Deposit</button>
+
+        </div>
+        <div class="bg-indigo-500  rounded-md p-6">
+          <h4 class="text-3xl">Please Widraw</h4>
+          <input class="block w-9/12 px-3 mt-3 rounded-md " type="text" name="" id="widraw-field"
+            placeholder="$ amount you want to Widraw">
+          <button id="btn-widraw"
+            class="mt-2 bg-sky-500  hover:bg-blue-700 mt-3 rounded-md px-3 py-1 font-medium ">Widraw</button>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script src="js/deposit.js"></script>
+  <script src="js/widraw.js"></script>
+</body>
+
+</html>
